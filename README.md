@@ -85,3 +85,9 @@ There are many directions this cellular automata engine could eventually go.  So
 - [ ] Add options for different rule sets
 - [ ] Add multiple choices for starting states that are interesting
 - [ ] Explore multi-state versions of the game, such as the ones outlined
+
+
+I'm a web developer who loves staying up late
+-love writing code that inspires creativity and social impact
+
+-pressing buttons until something works
