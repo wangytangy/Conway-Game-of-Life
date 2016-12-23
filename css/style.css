@@ -13,8 +13,12 @@ h1 {
   background: gray;
   position: absolute;
   top: 60px;
-  left: 132px;
+  left: 103px;
   z-index: -1;
+}
+
+#grid.block {
+  display: none;
 }
 
 #easel {
