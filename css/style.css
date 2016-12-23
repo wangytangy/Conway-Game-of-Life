@@ -1,8 +1,32 @@
 body {
-  background-color: gray;
+  background-color: black;
+  position: relative;
+}
+
+h1 {
+  color: #eee;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#grid {
+  background: gray;
+  position: absolute;
+  top: 60px;
+  left: 132px;
+  z-index: -1;
 }
 
 #easel {
-  background-color: yellow;
+  border: 1px solid #eee;
+
+  margin: 0 auto;
   display: block;
+
+  box-sizing: border-box;
+}
+
+.button-menu {
+  text-align: center;
+  width: 100%;
 }
