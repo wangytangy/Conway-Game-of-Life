@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  position: relative;
+
 }
 
 h1 {
@@ -9,11 +9,21 @@ h1 {
   text-align: center;
 }
 
+.canvas-container {
+
+  position: relative;
+  height: 500px;
+  width: 1000px;
+  margin: 0 auto;
+
+}
+
 #grid {
-  background: gray;
+  background: #ccc;
   position: absolute;
-  top: 60px;
-  left: 103px;
+  margin: 0 auto;
+  left: 1px;
+  top: 1px;
   z-index: -1;
 }
 
@@ -26,7 +36,6 @@ h1 {
 
   margin: 0 auto;
   display: block;
-
   box-sizing: border-box;
 }
 
