@@ -11,8 +11,8 @@
   <body>
     <h1>Conway's Game of Life</h1>
     <div class="canvas-container">
-      <canvas id="grid" width="1000" height="500" class="block"></canvas>
-      <canvas id="easel" width="1000" height="500"></canvas>
+      <canvas id="grid" width="1200" height="600" class="block"></canvas>
+      <canvas id="easel" width="1200" height="600"></canvas>
     </div>
     <div class="button-menu">
       <button type="button" id="pause">Toggle Animation</button>
@@ -26,5 +26,12 @@
       <button type="button" id="toggle-grid">Toggle Grid</button>
       <button type="button" id="toggle-colors">Colors!</button>
     </div>
+
+    <div class="slider-container">
+      <p id="slider-min">5 fps</p>
+      <input id="slider" type="range" max="45" min="5" step="1" value="45"></input>
+      <p id="slider-max">45 fps</p>
+    </div>
+
   </body>
 </html>

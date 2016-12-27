@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  font-family: sans-serif;
 
 }
 
@@ -12,8 +13,8 @@ h1 {
 .canvas-container {
 
   position: relative;
-  height: 500px;
-  width: 1000px;
+  height: 600px;
+  width: 1200px;
   margin: 0 auto;
 
 }
@@ -42,4 +43,14 @@ h1 {
 .button-menu {
   text-align: center;
   width: 100%;
+}
+
+
+.slider-container {
+  display: flex;
+  color: #fff;
+}
+
+#slider {
+  background-color: red;
 }
