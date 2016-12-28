@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
     <script type="application/javascript" src="lib/bundle.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -14,12 +15,16 @@
       <canvas id="grid" width="1200" height="600" class=""></canvas>
       <canvas id="easel" width="1200" height="600"></canvas>
     </div>
+
     <div class="button-menu">
-      <button type="button" id="pause">Toggle Animation</button>
       <button type="button" id="step-generation">Next Generation</button>
       <button type="button" id="toggle-colors">Colors!</button>
       <button type="button" id="toggle-grid">Toggle Grid</button>
       <button type="button" id="random">Create random grid</button>
+
+      <i class="material-icons play">play_circle_outline</i>
+      <i class="material-icons pause block-button">pause_circle_outline</i>
+      <i class="material-icons next">skip_next</i>
 
       <select class="configs-menu">
         <option value="glider">Gliders</option>
