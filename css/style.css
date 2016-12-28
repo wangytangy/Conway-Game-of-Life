@@ -1,7 +1,10 @@
 body {
   background-color: black;
   font-family: sans-serif;
+}
 
+button {
+  display: block;
 }
 
 h1 {
