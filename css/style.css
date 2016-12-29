@@ -62,7 +62,7 @@ h1 {
 nav {
   display: flex;
   width: 1200px;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 .button-menu {
@@ -112,12 +112,16 @@ i.block-button {
   margin-right: 20px;
 }
 
+select {
+  font-size: 16px;
+}
+
 .slider-container {
   color: #eee;
   display: flex;
   justify-content: center;
 }
 
-select {
-  font-size: 18px;
+#slider {
+  margin: 0 10px 0 10px;
 }
