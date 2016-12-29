@@ -26,6 +26,7 @@ button:hover {
 h1 {
   color: #eee;
   font-family: sans-serif;
+  font-size: 52px;
   text-align: center;
 }
 
@@ -114,6 +115,10 @@ i.block-button {
 
 select {
   font-size: 16px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
 }
 
 .slider-container {
