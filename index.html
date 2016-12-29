@@ -16,44 +16,50 @@
       <canvas id="easel" width="1200" height="600"></canvas>
     </div>
 
-    <div class="button-menu">
-      <button type="button" id="step-generation">Next Generation</button>
-      <button type="button" id="toggle-colors">Colors!</button>
-      <button type="button" id="toggle-grid">Toggle Grid</button>
-      <button type="button" id="random">Create random grid</button>
+    <nav>
+      <div class="button-menu">
+        <button type="button" id="toggle-colors">Toggle Colors</button>
+        <button type="button" id="toggle-grid">Toggle Grid</button>
+      </div>
 
-      <i class="material-icons play">play_circle_outline</i>
-      <i class="material-icons pause block-button">pause_circle_outline</i>
-      <i class="material-icons next">skip_next</i>
+      <div class="control-menu">
+        <i class="material-icons play">play_circle_outline</i>
+        <i class="material-icons pause block-button">pause_circle_outline</i>
+        <i class="material-icons next">skip_next</i>
+      </div>
 
-      <select class="configs-menu">
-        <option value="glider">Gliders</option>
-        <option value="benchmark">Benchmark</option>
-        <option value="beacon-maker">Beacon Maker</option>
-        <option value="gosper-gun">Gosper's Glider Gun</option>
-        <option value="growth-gun">Growth Gun</option>
+      <div class="config-menu">
+        <button type="button" id="random">Create random grid</button>
+        <select class="configs-dropdown">
+          <option value="glider">Gliders</option>
+          <option value="benchmark">Benchmark</option>
+          <option value="beacon-maker">Beacon Maker</option>
+          <option value="gosper-gun">Gosper's Glider Gun</option>
+          <option value="growth-gun">Growth Gun</option>
 
-        <option value="superstring">Superstring</option>
-        <option value="lightwire">Light Wire</option>
-        <option value="electricFence">Electric Fence</option>
-        <option value="spaceRake">Space Rake</option>
+          <option value="superstring">Superstring</option>
+          <option value="lightwire">Light Wire</option>
+          <option value="electricFence">Electric Fence</option>
+          <option value="spaceRake">Space Rake</option>
 
-        <option value="piOrbital">Pi Orbital</option>
+          <option value="piOrbital">Pi Orbital</option>
 
-        <option value="boatStretcher">Boat Stretcher</option>
-        <option value="wickerStretcher">Wicker Stretcher</option>
+          <option value="boatStretcher">Boat Stretcher</option>
+          <option value="wickerStretcher">Wicker Stretcher</option>
 
-        <option value="pinwheel">Pinwheel</option>
-        <option value="kokGalaxy">Kok's Galaxy</option>
-        <option value="quasar">Quasar</option>
-        <option value="hectic">Hectic</option>
-        <option value="pulShuttle">Pull Shuttle</option>
-        <option value="gliderDuplicator">Glider Duplicator</option>
-        <option value="spaceshipBouncer">Spaceship Bouncer</option>
-        <option value="trafficCircle">Traffic Circle</option>
-        <option value="spacefiller">Space Filler</option>
-      </select>
-    </div>
+          <option value="pinwheel">Pinwheel</option>
+          <option value="kokGalaxy">Kok's Galaxy</option>
+          <option value="quasar">Quasar</option>
+          <option value="hectic">Hectic</option>
+          <option value="pulShuttle">Pull Shuttle</option>
+          <option value="gliderDuplicator">Glider Duplicator</option>
+          <option value="spaceshipBouncer">Spaceship Bouncer</option>
+          <option value="trafficCircle">Traffic Circle</option>
+          <option value="spacefiller">Space Filler</option>
+        </select>
+      </div>
+
+    </nav>
 
     <div class="slider-container">
       <p id="slider-min">5 fps</p>
