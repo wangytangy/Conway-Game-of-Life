@@ -7,11 +7,20 @@ body {
 button {
   display: block;
   border: none;
-  padding: 0;
+  padding: 10px 20px;
+  height: 40px;
   margin: 0;
   background: transparent;
   outline: none;
   color: #eee;
+  border: 1px solid #eee;
+
+  font-size: 14px;
+}
+
+button:hover {
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 h1 {
@@ -50,35 +59,65 @@ h1 {
   box-sizing: border-box;
 }
 
+nav {
+  display: flex;
+  width: 1200px;
+  margin: 10px auto;
+}
+
+.button-menu {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-menu > button {
+  margin-right: 20px;
+}
+
+
+.control-menu {
+  text-align: center;
+  width: 33.33%;
+  align-items: center;
+}
+
+.config-menu {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+}
+
+
 i.material-icons {
   color: #eee;
   cursor: pointer;
   outline: none;
   font-size: 89px;
-  border-radius: 50%;
+
 }
 
-.material-icons:hover {
+i.material-icons:hover {
   cursor: pointer;
   color: #fff;
 }
+
 
 i.block-button {
   display: none;
 }
 
-
-.button-menu {
-  text-align: center;
-  width: 100%;
+#random {
+  margin-right: 20px;
 }
-
 
 .slider-container {
-  display: flex;
   color: #eee;
+  display: flex;
+  justify-content: center;
 }
 
-#slider {
-  background-color: red;
+select {
+  font-size: 18px;
 }
