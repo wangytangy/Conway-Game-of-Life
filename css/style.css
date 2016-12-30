@@ -26,6 +26,7 @@ ul {
 img {
   width: 114px;
   height: 114px;
+  border: 1px solid #ccc;
 }
 
 body {
