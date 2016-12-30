@@ -1,5 +1,35 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 114px;
+  height: 114px;
+}
+
 body {
-  background-color: black;
+  background-color: #000;
   font-family: sans-serif;
   color: #eee;
 }
@@ -23,11 +53,24 @@ button:hover {
   color: #fff;
 }
 
+button.pressed {
+  background-color: #fff;
+  color: #000;
+
+}
+
+#random:active {
+  background-color: #fff;
+  color: #000;
+}
+
 h1 {
   color: #eee;
   font-family: sans-serif;
-  font-size: 52px;
+  font-size: 40px;
+  font-weight: 800;
   text-align: center;
+  padding: 20px;
 }
 
 .canvas-container {
@@ -113,20 +156,87 @@ i.block-button {
   margin-right: 20px;
 }
 
-select {
-  font-size: 16px;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-
-}
 
 .slider-container {
   color: #eee;
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 
 #slider {
   margin: 0 10px 0 10px;
+}
+
+
+section {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.content-paragraphs {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.content-paragraphs p {
+  margin: 20px 0 30px 0;
+}
+
+.content-paragraphs ol {
+  margin: 30px 0 30px 0;
+}
+
+.content-paragraphs li {
+  margin: 0 0 0px 35px;
+}
+
+#description {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.configs-list-container {
+  width: 800px;
+  margin: 30px auto;
+
+}
+
+#patterns {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.configs-list {
+  height: 500px;
+  overflow: scroll;
+
+
+}
+
+.configs-list li {
+  margin: 30px 0 0 0;
+}
+
+.configs-list div {
+  display: flex;
+  padding: 0 20px;
+}
+
+.list-text {
+  flex-direction: column;
+}
+
+.list-text h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.list-text p {
+  font-size: 14px;
+  font-weight: lighter;
 }
