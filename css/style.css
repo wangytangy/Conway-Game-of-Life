@@ -34,36 +34,6 @@ body {
   color: #eee;
 }
 
-button {
-  display: block;
-  border: none;
-  padding: 10px 20px;
-  height: 40px;
-  margin: 0;
-  background: transparent;
-  outline: none;
-  color: #eee;
-  border: 1px solid #eee;
-
-  font-size: 14px;
-}
-
-button:hover {
-  border: 1px solid #fff;
-  color: #fff;
-}
-
-button.pressed {
-  background-color: #fff;
-  color: #000;
-
-}
-
-#random:active {
-  background-color: #fff;
-  color: #000;
-}
-
 h1 {
   color: #eee;
   font-family: sans-serif;
@@ -117,9 +87,38 @@ nav {
 }
 
 .button-menu > button {
-  margin-right: 20px;
+  margin-right: 10px;
+  justify-content: center;
 }
 
+button {
+  display: block;
+  border: none;
+  padding: 10px 20px;
+  height: 40px;
+  margin: 0;
+  background: transparent;
+  outline: none;
+  color: #eee;
+  border: 1px solid #eee;
+
+  font-size: 14px;
+}
+
+button:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+button.pressed {
+  background-color: #fff;
+  color: #000;
+}
+
+#clear-grid:active {
+  background-color: #fff;
+  color: #000;
+}
 
 .control-menu {
   text-align: center;
@@ -154,6 +153,12 @@ i.block-button {
 
 #random {
   margin-right: 20px;
+}
+
+
+#random:active {
+  background-color: #fff;
+  color: #000;
 }
 
 
