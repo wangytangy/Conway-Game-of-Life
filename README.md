@@ -1,8 +1,8 @@
 # Conway's Game of Life
 
-[Play Conway's Game of Life](https://wangytangy.github.io/Conway-Game-of-Life/)
+[Play Conway's Game of Life!](https://wangytangy.github.io/Conway-Game-of-Life/)
 
-Conway's Game of Life is a classic example of the concept of **cellular automata**.  The game plays out on a rectangular grid with each cell on the grid starting as either dead or alive when the game begins. On the next iteration of the game (called a "generation") the cells are updated according to its surrounding neighbors.
+Conway's Game of Life is a classic simulation of **cellular automata**.  The game plays out on a rectangular grid with each cell on the grid starting as either dead or alive when the game begins. On the next iteration of the game (called a "generation") the cells are updated according to its surrounding neighbors.
 
 ### Features  
 
@@ -149,6 +149,8 @@ drawMirrorGrid() {
 To get around this, I attached a `click` eventListener on the entire canvas and extrapolated the mouse's X and Y positions. I then subtracted the offset of the canvas's X and Y position relative to the window and divided the difference of each offset position by the width of each cell, yielding the X and Y position of the dead cell if it had existed at that spot. After calculating it's X and Y position relative to the canvas, I could then access that particular cell in the `squares` object, toggle it's living status, and re-render the grid to reflect the changes.
 
 ```javascript
+//board.js
+
 $("#easel").click(function(e) {
   let parentOffset = $(this).offset();
   let relX = Math.floor(((e.pageX - parentOffset.left) / 10));
@@ -160,3 +162,21 @@ $("#easel").click(function(e) {
   board.drawMirrorGrid();
 });
 ```
+### Future Plans
+
+#### Enable Click and Drag Cell Creation
+
+Users should be able to click on the canvas and drag their mouse to generate
+cells.
+
+#### Larger Grid and Speed Optimization
+
+Construct a larger grid while keeping performance speed high.
+
+#### Custom Grid Sizes
+
+Create an input form which allow users to create grids with a custom number of cells.
+
+#### Complete Library of Configurations
+
+Build a complete library of cell configurations with buttons to auto-generate them on the game grid.
