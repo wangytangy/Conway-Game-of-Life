@@ -289,6 +289,10 @@ footer ul {
 	 filter: drop-shadow(0px 0px 2px #fff);
 }
 
+#portfolio i {
+	font-size: 25px;
+}
+
 #portfolio:hover {
 	filter: drop-shadow(0px 0px 2px #fff);
 }
