@@ -27,7 +27,7 @@ Conway's Game of Life is a classic simulation of **cellular automata**.  The gam
 
 Many complex cell patterns that have been discovered throughout the decades
 would be too time-consuming to hardcode in the grid as they may involve hundreds
-of cells positioned at specific locations. To automate the process, I store
+of cells positioned at specific locations. To automate the process, I stored
 the patterns (available in online libraries) as a string with "dead" cells are represented by "." and live cells are represented by "O". These strings are stored in variables held by a JavaScript object and imported into the Board class.
 
 ```javascript
@@ -50,6 +50,7 @@ const configs = {
   lightwire: lightwire
 }
 ```
+
 The `parseTextIntoConfig` helper function parses the string pattern and returns a 2D array. `setupCellsHorizontal` takes the 2D array as a parameter and generates the corresponding cells in the grid. Using these two methods, it's possible to import any cell pattern and quickly render it on the game grid without laborious hard-coding.
 
 ```javascript
@@ -146,7 +147,7 @@ drawMirrorGrid() {
   this.stage.update();
 }
 ```
-To get around this, I attached a `click` eventListener on the entire canvas and extrapolated the mouse's X and Y positions. I then subtracted the offset of the canvas's X and Y position relative to the window and divided the difference of each offset position by the width of each cell, yielding the X and Y position of the dead cell if it had existed at that spot. After calculating it's X and Y position relative to the canvas, I could then access that particular cell in the `squares` object, toggle it's living status, and re-render the grid to reflect the changes.
+To get around this, I attached a `click` eventListener on the entire canvas and extrapolated the mouse's X and Y positions. I then subtracted the offset of the canvas's X and Y position relative to the window and divided the difference of each offset position by the width of each cell, yielding the X and Y position of the dead cell if it had existed at that spot. After calculating it's X and Y position relative to the canvas, I could then access that particular cell in the `squares` object, toggle its living status, and re-render the grid to reflect the changes.
 
 ```javascript
 //board.js
