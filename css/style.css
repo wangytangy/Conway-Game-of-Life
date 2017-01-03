@@ -52,8 +52,7 @@ h1 {
 .canvas-container {
 
   position: relative;
-  height: 600px;
-  width: 1200px;
+
   margin: 0 auto;
 
 }
@@ -64,6 +63,7 @@ h1 {
   margin: 0 auto;
   left: 1px;
   top: 1px;
+	display: block;
   z-index: -1;
 }
 
@@ -73,7 +73,6 @@ h1 {
 
 #easel {
   border: 1px solid #eee;
-
   margin: 0 auto;
   display: block;
   box-sizing: border-box;
@@ -81,12 +80,12 @@ h1 {
 
 nav {
   display: flex;
+	justify-content: center;
   width: 1200px;
   margin: 20px auto;
 }
 
 .button-menu {
-  width: 33.33%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,12 +129,12 @@ button.pressed {
 
 .control-menu {
   text-align: center;
-  width: 33.33%;
+  width: 13.33%;
   align-items: center;
 }
 
 .config-menu {
-  width: 33.33%;
+
   display: flex;
   align-items: center;
 }
@@ -145,7 +144,7 @@ i.material-icons {
   color: #eee;
   cursor: pointer;
   outline: none;
-  font-size: 89px;
+  font-size: 65px;
 
 }
 
