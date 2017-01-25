@@ -54,6 +54,8 @@ h1 {
   position: relative;
 
   margin: 0 auto;
+	display: flex;
+	justify-content: center;
 
 }
 
@@ -61,8 +63,6 @@ h1 {
   background: #000;
   position: absolute;
   margin: 0 auto;
-  left: 1px;
-  top: 1px;
 	display: block;
   z-index: -1;
 }
